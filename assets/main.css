@@ -4,7 +4,7 @@ body{
 
 .header{
     
-    padding: 56px;
+    padding:  56px;
 }
 
 .header ul {
@@ -25,6 +25,7 @@ body{
 .search form{
     border: 3px solid #E7E6EF;
         border-radius: 5px;
+    
  
 }
  
@@ -49,4 +50,48 @@ body{
    .header .bar{
         display: block;
     }
+}
+
+.footer{
+    background-color: #EEEFFB;
+}
+
+ .footer .left-side{
+   align-items: flex-start; 
+   gap: 35px;
+}
+
+
+
+
+.email-address form{
+    border: 3px solid #E7E6EF;
+        border-radius: 5px;
+    
+ 
+}
+ 
+.email-address input{
+    border: none;
+    outline: none;
+    width: 250px;
+    padding-left: 10px;
+}
+.email-address button{
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    padding: 8px 12px;
+}
+
+.right-side{
+    width: 60%;
+}
+
+.footer-item{
+    gap: 45px;
+}
+
+.footer a,.address-info a{
+    color: #8A8FB9;
 }
