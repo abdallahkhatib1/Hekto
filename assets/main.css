@@ -55,12 +55,17 @@ body{
 .footer{
     background-color: #EEEFFB;
 }
-
+.footer .row{
+    gap: 30px;
+}
  .footer .left-side{
    align-items: flex-start; 
    gap: 35px;
+   width: calc((100% - 30px) /2);
 }
-
+.footer form{
+    display: flex;
+}
 
 
 
@@ -75,23 +80,44 @@ body{
     border: none;
     outline: none;
     width: 250px;
-    padding-left: 10px;
+    padding-left: 10px 15px;
 }
 .email-address button{
     border: none;
     outline: none;
     background-color: var(--primary);
-    padding: 8px 12px;
+    padding: 8px 10px;
 }
 
-.right-side{
-    width: 60%;
+.footer .right-side{
+    width: calc((100% - 30px) /2);
+
 }
 
 .footer-item{
     gap: 45px;
+    width: calc((100% - 70px) /3);
+}
+
+.footer .right-side .row{
+    gap: 35px;
+    align-items: flex-start;
 }
 
 .footer a,.address-info a{
     color: #8A8FB9;
+}
+
+@media screen and (max-width:992px) {
+    .footer .right-side , .footer .left-side {
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    .footer{
+        text-align: center;
+    }
+    .footer-item {
+        width: 100%;
+    }
 }
