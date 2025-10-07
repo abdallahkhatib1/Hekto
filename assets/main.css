@@ -52,6 +52,32 @@ body{
     }
 }
 
+
+.clients{
+    padding: 50px 0;
+}
+.clients .row{
+    flex-wrap: nowrap;
+    gap: 15px ;
+    overflow-x:auto ;
+}
+
+.clients .logo {
+    width: calc( (100% - 75px) /6);
+}
+.clients img{
+    width: 150px;
+    height: 125px;
+}
+
+@media screen and (max-width:900px) {
+    .clients .logo{
+        width: calc( (100% - 30px) / 3);
+    }
+}
+
+
+
 .footer{
     background-color: #EEEFFB;
 }
