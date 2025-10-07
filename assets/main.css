@@ -1,7 +1,7 @@
 body{
     font-family:var(--mainFont) ;
 }
-
+/* start header */
 .header{
     
     padding:  56px;
@@ -52,6 +52,31 @@ body{
     }
 }
 
+/* end header */
+
+/* start newslater */
+.newslater{
+    background-image: url('./img/public/Rectangle\ 102.png');
+    padding: 175px 0;
+    text-align: center;
+}
+
+.newslater h2{
+    margin-bottom: 50px;
+    color: #151875;
+    font-size: 35px;
+}
+.shop-btn:hover{
+    background-color: #0D0E43;
+    transition-duration: 0.5s;
+}
+
+
+/* end newslater */
+
+
+/* start clients */
+
 
 .clients{
     padding: 50px 0;
@@ -76,7 +101,9 @@ body{
     }
 }
 
+/* end clients */
 
+/* start footer */
 
 .footer{
     background-color: #EEEFFB;
@@ -147,3 +174,5 @@ body{
         width: 100%;
     }
 }
+
+/* end footer */
