@@ -68,7 +68,26 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     flex: 1 0 60%;
+    gap: 15PX;
 }
+.hero-content .text-content{
+display: flex;
+flex-direction: column;
+gap: 20px;
+text-align: start;
+}
+.hero-content .text-content a{
+    width: fit-content;
+}
+
+.hero-content .text-content p:first-of-type{
+    color: var(--primary);
+}
+.hero-content .second-p{
+    color: #8A8FB9;
+}
+
+
 .hero-content .hero-lamp{
     position: relative;
     bottom: 50px;
@@ -112,8 +131,8 @@ body{
 }
 .badge-sale{
     position: absolute;
-    left: 4px;
-    top: 20px;
+    left: -8px;
+    top: -5px;
 }
 
 .product .icon-1{
@@ -222,7 +241,98 @@ body{
 
 /* end products */
 
+/* start leatest products */
+.l-product{
+    position: relative;
+}
 
+.l-product .icon-1{
+    display: none;
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+}
+.l-product .icon-2{
+    display: none;
+    position: absolute;
+    left:25px;
+    bottom: 95px;
+
+}
+.l-product .icon-3{
+    display: none;
+    position: absolute;
+    left: 26px;
+    bottom: 68px;
+}
+
+.l-product:hover .icon-1{
+    display: block;
+}
+.l-product:hover .icon-2{
+    display: block;
+}
+.l-product:hover .icon-3{
+    display: block;
+}
+
+.l-product .product-img:hover{
+    
+    background-color:white ;
+}
+
+
+.l-product .product-img{
+    padding: 50px;
+    background-color:#F7F7F7 ;
+}
+
+.l-product .product-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.leatest-products-links{
+    padding: 20px;
+
+}
+.leatest-products{
+    padding: 50px 0;
+}
+
+.leatest-products h2{
+    color: #1A0B5B;
+    margin-bottom: 30px;
+}
+.l-product-details{
+    padding: 10px;
+}
+
+.leatest-products .container .row {
+    gap: 20px;
+}
+
+.leatest-products-links{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    font-size: 18px;
+}
+.leatest-products-links .first-link{
+    text-decoration: underline;
+}
+@media screen and (max-width:900px) {
+
+    .leatest-products .container .row { 
+        width: calc((100%-30px )-3);
+    }
+    
+}
+
+
+
+
+/* end leatest products */
 
 /* start newslater */
 .newslater{
