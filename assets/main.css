@@ -324,7 +324,7 @@ text-align: start;
 @media screen and (max-width:900px) {
 
     .leatest-products .container .row { 
-        width: calc((100%-30px )-3);
+        width: calc((100% - 30px )/3);
     }
     
 }
@@ -333,6 +333,137 @@ text-align: start;
 
 
 /* end leatest products */
+
+/* start Shopex Offer */
+.Shopex-Offer{
+    padding: 50px 0;
+}
+.Shopex-Offer h2{
+    margin-bottom: 30px;
+    color: #1A0B5B;
+}
+
+.Shopex-Offer .offers{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Shopex-Offer .offers .offer {
+  flex: 1 1 200px; 
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.Shopex-Offer .offers .offer p{
+    width: 200px;
+    color: rgba(26, 11, 91, 0.3);
+}
+
+.Shopex-Offer .offers .offer h3{
+    width: 200px;
+    color: #151875;
+    padding: 20px 0;
+}
+
+@media screen and ( max-width:900px ){
+    .Shopex-Offer .offers .offer {
+        width: calc( (100% - 15px) /2);
+    }
+}
+
+
+
+/* end Shopex Offer */
+
+/* start Trending-Products */
+
+.Trending-Products h2{
+    margin-bottom: 30px;
+    color: #1A0B5B;
+}
+.Trending-Product-img{
+    background-color: #F5F6F8;
+    padding: 10px;
+}
+.Trending-Product-img img{
+    width: 200px;
+    height: 200px;
+    
+}
+.Trending-Product-content{
+    padding: 10px;
+}
+
+.Trending-Product-prices{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+} 
+
+
+/* end Trending-Products *
+
+/* start top categories */
+
+.Top-Categories h2{
+    margin-bottom: 30px;
+    color: #1A0B5B;
+}
+
+
+
+.Top-Category-img {
+  position: relative;
+  background-color: #F6F7FB;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.Top-Category-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 50%;
+  border: 8px solid transparent;
+  border-left-color: #5e3bee;
+  border-bottom-color: #5e3bee;
+  opacity: 0;
+  transition: 0.4s ease;
+  box-sizing: border-box;
+}
+
+.Top-Category-img:hover::after {
+  opacity: 1;
+}
+
+
+
+
+
+
+.Top-Category-img img{
+    width: 180px;
+    height: 180px;
+}
+
+.Top-Category-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*end top categories */
 
 /* start newslater */
 .newslater{
